@@ -1,0 +1,167 @@
+
+
+.header-main{
+   display: flex;
+
+}
+
+header{
+    background-color: black;
+    border-radius: 15px;
+    margin-top: 20px;
+    margin-left: 40px;
+    margin-right: 40px;
+
+    animation-name: header-ani;
+    animation-duration: 10s;
+    }
+@keyframes header-ani{
+   from{
+      background-color: black;
+      margin: top 20px; 
+   }
+   to{
+      background-color: brown;
+   border-radius: 50px;
+}
+}
+
+    .header-tittle{
+        width: 50%;
+    }
+
+    .main-tittle{
+        color: wheat;
+        margin-left: 50px;
+        font-size: 90px;
+
+    }
+
+    .main-discription{
+        color: wheat;
+        margin-left: 20px;
+    }
+
+    .header-img{
+        width: 50%;
+    }
+
+    .header-img img{
+        width: 600px;
+     }
+     .main-btn{
+        font-size: 30px;
+        color: wheat;
+        margin-left: 150px;
+        background-color: rgb(230, 11, 48);
+        border-radius: 10px;
+        width: 200px;
+        animation-name: btn-ani;
+        animation-duration: 10s;
+        
+     }
+     @keyframes btn-ani{
+      form{
+         background-color: rgb(230, 11, 48);
+      }
+      to{
+         background-color: black
+      }
+     }
+
+     /* end header part */
+
+     /* start main part */
+     main{
+        margin-top: 150px;
+     }
+
+     .main-blog{
+      display: grid;
+      grid-template-columns: repeat(3,1fr);
+      column-gap: 10px;
+      width: 400px;
+      margin-left: 80px;
+      row-gap: 20px;
+   
+     }
+.sub-blog{
+   box-shadow: 10px wheat;
+   border: 1px solid grey;
+   border-radius: 10px;
+}
+     
+     .blog-img img{
+        width: 250px;
+     }
+     .blog-btn{
+        margin-left: 50px;
+     }
+     .blog-live{
+        font-size: 10px;
+     }
+     .message{
+        display: flex;
+     }
+     .fa-clock{
+        color: rgb(231, 22, 22);
+     }
+     .fa-comment-dots{
+        color: gray;
+        margin-left: 20px;
+     }
+
+
+
+     /* side bar */
+
+     .side-bar{
+
+      width: 250px;
+      height: 300px;
+      margin-left: 100px;
+      background-color: black;
+      border-radius: 10px;
+     }
+
+     .upcomming{
+      margin-top: 50px;
+      margin-left: 50px;
+      margin-bottom: 20px;
+      background-color: rgb(212, 33, 63);
+      width: 150px;
+     }
+   .bar{
+      display: flex;
+   }
+
+    #goal{
+      text-align: center;
+   }
+   footer{
+   width: 100%;
+   height: 200px;
+   margin-top: 50px;
+   padding: 2px;
+   background-color:black;
+   color: whitesmoke;
+   }
+   .footer-part{
+      display: flex;
+      margin-left: 250px;
+      margin-right: 250px;
+      justify-content: space-between;
+   }
+
+   .fa-facebook{
+      margin-left: 150px;
+      background-color: blue;
+   }
+   .fa-instagram{
+      margin-left: 350px;
+      background-color: red;
+   }
+   .fa-linkedin{
+      margin-left: 450px;
+      background-color: blueviolet;
+   }
