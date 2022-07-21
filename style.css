@@ -1,6 +1,7 @@
-/* google gont use */
 
-body{
+body
+/*  google font use */
+{
    @import url('https://fonts.googleapis.com/css2?family=Edu+SA+Beginner:wght@700&family=Poppins:wght@500&display=swap');
 }
 
@@ -8,17 +9,19 @@ body{
    display: flex;
 
 }
-
 header{
     background-color: black;
     border-radius: 15px;
     margin-top: 20px;
     margin-left: 40px;
     margin-right: 40px;
-
+   }
+header:hover{
     animation-name: header-ani;
     animation-duration: 10s;
     }
+/* annimation off Header */
+
 @keyframes header-ani{
    from{
       background-color: black;
@@ -29,6 +32,7 @@ header{
    border-radius: 50px;
 }
 }
+/* end off animation off main button */
 
     .header-tittle{
         width: 50%;
@@ -59,23 +63,30 @@ header{
         margin-left: 100px;
         background-color: rgb(230, 11, 48);
         border-radius: 10px;
-        width: 200px;
+        width: 200px;}
+
+        button:hover{
         animation-name: btn-ani;
         animation-duration: 10s;
-        
-     }
+         }
+
+         /* annimation off Main Button */
+
      @keyframes btn-ani{
       form{
          background-color: rgb(230, 11, 48);
+         font-size: 30px;
       }
       to{
-         background-color: black
+         background-color: black;
+         cursor: progress;
+         font-size: 10px;
       }
      }
 
-     /* end header part */
+     /* end off animation off main button */
 
-     /* start main part */
+     /* main part style */
      main{
         margin-top: 100px;
      }
@@ -117,24 +128,17 @@ header{
 
 
 
-     /* side bar */
+     /* side bar desig */
 
      .side-bar{
-
       width: 250px;
-      height: 300px;
-      margin-left: 100px;
+      height: 200px;
+      margin-left: 5px;
       background-color: black;
       border-radius: 10px;
+      text-align: center;
      }
 
-     .upcomming{
-      margin-top: 50px;
-      margin-left: 50px;
-      margin-bottom: 20px;
-      background-color: rgb(212, 33, 63);
-      width: 150px;
-     }
    .bar{
       display: flex;
    }
@@ -157,7 +161,7 @@ header{
       justify-content: space-between;
    }
 
-/* font asowme icone style */
+                     /* font asowme icone style */
 
    .fa-facebook-square{
       font-size: 25px;
@@ -173,23 +177,12 @@ header{
       font-size: 25px;
       margin-left: 300px;
       background-color: blueviolet;
-   }
 
-   /* media Quary */
-
-
-   @media only screen and (max-width: 688px)
-   {
-     header,main{
-      width:100%;
-     }
-      .header-main,.side-bar, .main-blog,.header-tittle,.bar,.footer-part{
-        grid-template-columns: repeat(1,1fr);
-        flex-direction: column;
-   }}
+      }   /* end font asowme icone style */
 
 
-   /* upcoming mathch style */
+   
+   /* upcoming match page style */
 
    .main-match{
       display: flex;
@@ -223,3 +216,67 @@ header{
       text-align: center;
       font-size: 18px;
    }
+                      /* upcoming match page style end */
+
+   /* NAV BAR Style */
+
+   nav li{
+      list-style: none;
+      margin:10px;
+      font-size: 25px;
+      padding: 10px;
+      border: 2px solid rgb(179, 34, 82);
+      background-color: gray;
+   }
+   nav ul{
+      display: flex;
+      margin-left: 10px;
+
+   }
+   nav li a{
+      text-decoration: none;
+}
+
+nav li:hover{
+   background-color: red;
+}
+
+ /* NAV BAR Style end */
+
+
+ 
+
+   /* media Quary  style part  */
+
+/* For Mobile Screen  */
+
+@media screen and (max-width: 688px)
+{
+  
+ .header-img,.header-main,.header-tittle,.main-baner,.main-blog,.main-btn,.main-discription,.main-match,.main-tittle,.baner1,.bar,.side-bar,.sub-baner,.main-baner,.footer-part,.goal,.footer,.footer-ele{
+   width: 100%; 
+   height: 100%;
+   justify-content: left;
+
+   background-color: royalblue;
+   grid-template-columns: repeat(1,1fr);
+   flex-direction: column;
+     }
+}
+ 
+ /*  tablet devices */
+
+ @media only screen and (min-width: 688px) and (max-width:992px){
+
+   
+ .header-img,.header-main,.header-tittle,.main-baner,.main-blog,.main-btn,.main-discription,.main-match,.main-tittle,.bar,.baner1,.side-bar,.sub-baner,.footer-ele,.goal{
+   width: 100%; 
+   height: 100%;
+   margin-left: 70px;
+   margin-right: 0px;
+   background-color: navy;
+   grid-template-columns: repeat(2,1fr);
+   flex-direction: column;
+ }
+ }
+ /* media Quary  style end  */
